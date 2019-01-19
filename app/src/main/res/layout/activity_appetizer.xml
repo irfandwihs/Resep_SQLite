@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Appetizer">
+
+    <EditText
+        android:id="@+id/edt_judul_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jdl_1"
+        android:layout_below="@+id/jdl_1"
+        android:inputType="text"
+        android:maxLength="25">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/jdl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:text="Judul" />
+
+    <TextView
+        android:id="@+id/ktg_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_judul_1"
+        android:layout_alignLeft="@+id/edt_judul_1"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Kategori" />
+
+    <EditText
+        android:id="@+id/edt_kategori_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ktg_1"
+        android:layout_below="@+id/ktg_1"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <TextView
+        android:id="@+id/bhn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_kategori_1"
+        android:layout_below="@+id/edt_kategori_1"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Bahan" />
+
+    <EditText
+        android:id="@+id/edt_bahan_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bhn_1"
+        android:layout_below="@+id/bhn_1"
+        android:inputType="textMultiLine|textCapWords"
+        android:maxLines="30"/>
+
+    <TextView
+        android:id="@+id/intr_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_bahan_1"
+        android:layout_below="@+id/edt_bahan_1"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Intruksi" />
+
+    <EditText
+        android:id="@+id/edt_intruksi_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intr_1"
+        android:layout_below="@+id/intr_1"
+        android:inputType="textMultiLine|textCapWords"
+        android:maxLines="30" />
+
+
+    <Button
+        android:id="@+id/create1"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_intruksi_1"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edt_intruksi_1"
+        android:layout_alignEnd="@+id/edt_intruksi_1" />
+
+</RelativeLayout>
